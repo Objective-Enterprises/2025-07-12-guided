@@ -10,16 +10,16 @@ export default function MenuPage(props: {
   const items = props.items.map((item) => {
     const path = `/menu/${item.id}`
     return (
-      <Link href={path}>
-        <div className='menu-item'>
-          <div>
-            <h2>{item.name}</h2>
-            <p>{item.description}</p>
-            <p>${item.price}</p>
-          </div>
-          <Image src={item.image} alt={item.name} height={200} width={300} />
+      <div className='menu-item'>
+        <div>
+          <Link href={path}>
+            <h3>{item.name}</h3>
+          </Link>
+          <p>{item.description}</p>
+          <p>${item.price}</p>
         </div>
-      </Link>
+        <Image src={item.image} alt={item.name} height={200} width={300} />
+      </div>
     )
   })
   return (

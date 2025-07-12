@@ -6,7 +6,7 @@ export const items: FoodItem[] = [
     name: 'Burger',
     description: 'Beef patty between potato buns',
     image: '/images/burger.jpg',
-    ingredients: ['beef', 'potato bun', 'lettuce'],
+    ingredients: ['Beef', 'Potato Bun', 'Lettuce'],
     price: 10
   },
   {
@@ -14,7 +14,7 @@ export const items: FoodItem[] = [
     name: 'Pasta',
     description: 'Noodles in sauce',
     image: '/images/pasta.jpg',
-    ingredients: ['noodles', 'sauce'],
+    ingredients: ['Noodles', 'Sauce'],
     price: 15
   },
   {
@@ -22,7 +22,7 @@ export const items: FoodItem[] = [
     name: 'Pizza',
     description: 'With pepperoni',
     image: '/images/pizza.jpg',
-    ingredients: ['crust', 'sauce', 'cheese', 'pepperoni'],
+    ingredients: ['Crust', 'Sauce', 'Cheese', 'Pepperoni'],
     price: 20
   }
 ]

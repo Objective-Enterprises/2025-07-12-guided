@@ -17,11 +17,7 @@ export const getServerSideProps = async function (context: GetServerSidePropsCon
 export default function DetailPage (props: {
   item: FoodItem
 }) {
-  const items = props.item.ingredients.map((ingredient, index) => {
-    return (
-      <li key={index}>{ingredient}</li>
-    )
-  })
+  const list = props.item.ingredients.join(', ')
   return (
     <div className="dish-details-container">
       <h1>{props.item.name}</h1>
@@ -33,11 +29,11 @@ export default function DetailPage (props: {
           width={600}
         />
       </div>
-      <h2>Ingredients</h2>
-      <ul>
-        {items}
-      </ul>
-      <h3>${props.item.price}</h3>
+      <h3>Ingredients</h3>
+      <p>
+        {list}
+      </p>
+      <h2>${props.item.price}</h2>
       <Link href='/menu'>Menu</Link>
     </div>
   )
